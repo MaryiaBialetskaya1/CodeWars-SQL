@@ -1,3 +1,14 @@
 SELECT sqrt(number1)::FLOAT AS root,
        log(number2)         AS log
 FROM decimals;
+
+/*
+SQRT() function :
+This function in SQL Server is used to return the square root of a specified positive number. For example, if the specified number is 81, this function will return 9.
+*/
+
+/*
+The LOG() function returns the natural logarithm of a specified number, or the logarithm of the number to the specified base.
+
+From SQL Server 2012, you can also change the base of the logarithm to another value by using the optional base parameter.
+*/
