@@ -1,0 +1,14 @@
+SELECT
+  m.id,
+  m.name,
+  POSITION(',' IN m.characteristics) AS comma
+FROM monsters AS m
+ORDER BY comma;
+
+/*
+The POSITION() function returns the position of the first occurrence of a substring in a string.
+
+If the substring is not found within the original string, this function returns 0.
+
+This function performs a case-insensitive search.
+*/
