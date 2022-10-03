@@ -1,0 +1,2 @@
+SELECT custid, custstate, custname
+FROM customers;
