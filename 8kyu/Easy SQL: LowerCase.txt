@@ -1,0 +1,2 @@
+SELECT *, lower(race) AS race
+FROM demographics
