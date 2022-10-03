@@ -1,0 +1,13 @@
+select count(*) as products, country
+from products
+where country in ('United States of America', 'Canada')
+group by country
+order by count(*) desc;
+
+/*
+The IN operator allows you to specify multiple values in a WHERE clause.
+
+The IN operator is a shorthand for multiple OR conditions.
+
+COUNT(*) returns the number of items in a group. This includes NULL values and duplicates.
+*/
