@@ -3,3 +3,9 @@ FROM books
 ORDER BY copies_sold
 DESC
 LIMIT 5;
+
+--another solution--
+
+SELECT * FROM books
+ORDER BY copies_sold DESC
+FETCH FIRST 5 ROWS ONLY;
