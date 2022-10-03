@@ -10,6 +10,7 @@ FROM
 JOIN
   companies ON companies.id = products.company_id;
 
+
 /*another solution*/
 
   SELECT
@@ -19,5 +20,6 @@ FROM
   products
 LEFT JOIN companies
   ON companies.id = products.company_id
+
 
 
