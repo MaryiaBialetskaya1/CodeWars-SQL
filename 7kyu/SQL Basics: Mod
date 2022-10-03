@@ -1,0 +1,6 @@
+select MOD(number1, number2) as mod
+from decimals
+
+/*
+The MOD() function in MySQL is used to find the remainder of one number divided by another. The MOD() function returns the remainder of dividend divided by divisor. if the divisor is zero, it returns NULL.
+*/
