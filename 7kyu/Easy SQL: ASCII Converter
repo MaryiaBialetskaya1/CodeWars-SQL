@@ -1,0 +1,11 @@
+/*
+SELECT id, ascii(name) as name, birthday, ascii(race) as race
+FROM demographics
+*/
+
+SELECT
+  id,
+  ascii(left(name, 1)) AS name,
+  birthday,
+  ascii(left(race, 1)) AS race
+FROM demographics

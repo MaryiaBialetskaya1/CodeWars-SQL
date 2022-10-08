@@ -1,0 +1,9 @@
+select CBRT(number1) as cuberoot,
+       LN(number2) AS logarithm
+from decimals
+
+/*
+The PostgreSQL cbrt() function is used to return the cube root of a given number.
+
+The LN() function returns the natural logarithm of a number.
+*/

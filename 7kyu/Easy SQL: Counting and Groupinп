@@ -1,0 +1,16 @@
+SELECT race, COUNT(*) as count
+FROM demographics
+GROUP BY race
+ORDER BY  count desc
+
+/*another solution
+SELECT race, COUNT(race)
+FROM demographics
+GROUP BY race
+ORDER BY Count(race) desc
+*/
+
+/*COUNT(*) return a table that shows a count of each race represented,
+returns the number of rows in a specified table
+*/
+
