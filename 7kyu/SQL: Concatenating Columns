@@ -1,0 +1,5 @@
+
+select CONCAT  (prefix, ' ', first, ' ', last, ' ', suffix) AS title
+FROM names
+
+//The CONCAT() function adds two or more strings together.
