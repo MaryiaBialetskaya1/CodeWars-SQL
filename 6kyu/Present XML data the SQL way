@@ -1,0 +1,16 @@
+SELECT
+  first_name,
+  last_name,
+  extract(year from age(date_of_birth))::int as age,
+  case when private then 'Hidden'
+  else email_address
+  end as email_address
+FROM XMLTABLE('/data/user' PASSING (select data from users)
+  COLUMNS
+  first_name text path 'first_name',
+  last_name text path 'last_name',
+  date_of_birth date path 'date_of_birth',
+  private boolean path 'private',
+  email_address text path 'email_addresses/address[1]' default 'None'
+)
+order by 1, 2
